@@ -23,8 +23,8 @@ Comments:	'.$_POST['comments'].'
     $mail->Encoding = '7bit';
     
     // Authentication  
-    $mail->Username   = "youremail@gmail.com"; // Your full Gmail address
-    $mail->Password   = "yourpassword"; // Your Gmail password
+    $mail->Username   = "alegends415@gmail.com"; // Your full Gmail address
+    $mail->Password   = "punyeta123"; // Your Gmail password
       
     // Compose
     $mail->SetFrom($_POST['emailid'], $_POST['fullname']);
@@ -33,7 +33,7 @@ Comments:	'.$_POST['comments'].'
     $mail->MsgHTML($message);
  
     // Send To  
-    $mail->AddAddress("recipientemail@gmail.com", "Recipient Name"); // Where to send it - Recipient
+    $mail->AddAddress("alegends415@gmail.com", "Recipient Name"); // Where to send it - Recipient
     $result = $mail->Send();		// Send!  
 	$message = $result ? 'Successfully Sent!' : 'Sending Failed!';      
 	unset($mail);
